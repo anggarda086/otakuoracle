@@ -1,6 +1,6 @@
 # PW6_UAS_OTAKUORACLE
-  Muhammad Prawira Saragih (221401113)
-  Anggarda Muhammad Aziz (221401086)
+  1. Muhammad Prawira Saragih (221401113)
+  2. Anggarda Muhammad Aziz (221401086)
 
 
 Link Youtube : -
