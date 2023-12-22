@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otaku Oracle</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+    
+    <!--Navbar-->
+    <nav>
+        <div class="wrapper">
+          <div class="logo"><a href="#">Otaku Oracle</a></div>
+          <input type="radio" name="slider" id="menu-btn">
+          <input type="radio" name="slider" id="close-btn">
+            <ul class="nav-links">
+                <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li>
+                    <a href="#Genre" class="desktop-item">Genre</a>
+                    <input type="checkbox" id="showDrop">
+                    <label for="showDrop" class="mobile-item">Genre</label>
+                    <ul class="drop-menu">
+                        <li><a href="../romance/romance.html">Romance</a></li>
+                        <li><a href="../action/action.html">Action</a></li>
+                        <li><a href="../adventure/adventure.html">Adventure</a></li>
+                        <li><a href="../comedy/comedy.html">Comedy</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <img src="/uas_lab_pemweb/asset/pngegg.png" class="profile">
+                    <input type="checkbox" id="showDropProfile">
+                    <label for="showDropProfile" class="mobile-item">Profile</label>
+                    <ul class="drop-menu1">
+                        <li><a href="../update-profile/update-profile.html">Update Profile</a></li>
+                        <li><a href="../update-profile/logout.php">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Home-->
+    <section class="home" id="home">
+        <div class="content" style="z-index: 1;">
+            <div class="content-left">
+                <div class="home-text">
+                    <h2>Welcome to</h2>
+                     <span> Otaku Oracle</span>
+                    <p>Your ultimate destination for all things anime! Dive into our curated collection of must-watch anime recommendations, where we explore and celebrate the best in the world of Japanese animation. Whether you're a seasoned otaku or a newcomer to the anime universe, our articles are here to guide you through the vast and exciting realm of animated storytelling. Get ready to discover your next favorite anime series with Otaku Oracle!</p>
+                </div>
+            </div>
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="/uas_lab_pemweb/asset/oshi.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/uas_lab_pemweb/asset/jjk.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/uas_lab_pemweb/asset/aot.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+    </section>
+
+    <!-- about -->
+    <section class="about" id="about"> 
+        <div class="about-content">
+            <div class="about-img">
+                <img src="/uas_lab_pemweb/asset/killua.gif" alt="tes" >
+            </div>
+    
+            <div class="about-text">
+                <h2><span>About</span> Us</h2>
+                <h4>Why Choose Us?</h4>
+                <p>Hey anime enthusiasts! Welcome to Otaku Oracle,
+                    your go-to hub for all things anime! We're a passionate community that has transformed our love for anime into a curated collection of top-notch recommendations.
+                    Our mission is simple — to spread joy and excitement among fellow anime enthusiasts worldwide! At Otaku Oracle,
+                    we've carefully selected the most captivating and vibe-worthy articles that resonate with the true spirit of anime.
+                    Immerse yourself in our epic anime universe where imagination knows no bounds,
+                    and let the Otaku Oracle guide you to the next level of fandom exhilaration!
+                    Join us on this thrilling journey where the magic of anime comes to life through our carefully crafted recommendations.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Genre -->
+    <section class="Genre" id="Genre"> <br>
+    <div class="heading">
+        <h1>Genre</h1>
+    </div>
+
+    <!-- container -->
+    <div class="Genre-container">
+        <div class="box">
+            <img src="/uas_lab_pemweb/asset/kimi no uso.jpg" alt="gambar">
+                <h3>Romance</h3>
+                <p>Experience emotional growth and meaningful connections in these animated love stories.
+                </p>                
+        </div>
+        <div class="box">
+            <img src="/uas_lab_pemweb/asset/chainsaw.webp" alt="gambar">
+                <h3>Action</h3>
+                <p>Experience dynamic animation and heroic feats in these action-packed adventures.</p>                
+        </div>
+        <div class="box">
+            <img src="/uas_lab_pemweb/asset/nanatsu.jpeg" alt="gambar">
+                <h3>Adventure</h3>
+                <p>Join characters on daring quests filled with excitement and discovery.</p>                
+        </div>
+        <div class="box">
+            <img src="/uas_lab_pemweb/asset/gin.jpg" alt="gambar">
+                <h3>Comedy</h3>
+                <p>Enjoy witty humor, quirky characters, and entertaining situations.</p>                
+        </div>
+        
+    </div>
+    <div class="bawah">
+        <a href="genre.html" class="btn-genre">See All Genre</a>
+    </div>
+    </section> 
+       
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+</html>
