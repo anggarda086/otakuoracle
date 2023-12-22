@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="update.css">
+    </head>
+    <body>
+        <nav>
+            <div class="wrapper">
+              <div class="logo"><a href="/home/home.html">Otaku Oracle</a></div>
+              <input type="radio" name="slider" id="menu-btn">
+              <input type="radio" name="slider" id="close-btn">
+                <ul class="nav-links">
+                    <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+                    <li><a href="/uas_lab_pemweb/home/home.html">Home</a></li>
+                    <li><a href="/uas_lab_pemweb/home/home.html#about">About</a></li>
+                    <li>
+                        <a href="/uas_lab_pemweb/genre/genre.html" class="desktop-item">Genre</a>
+                        <input type="checkbox" id="showDrop">
+                        <label for="showDrop" class="mobile-item">Genre</label>
+                        <ul class="drop-menu">
+                            <li><a href="/uas_lab_pemweb/romance/romance.html">Romance</a></li>
+                            <li><a href="/uas_lab_pemweb/action/action.html">Action</a></li>
+                            <li><a href="/uas_lab_pemweb/adventure/adventure.html">Adventure</a></li>
+                            <li><a href="/uas_lab_pemweb/comedy/comedy.html">Comedy</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <img src="/uas_lab_pemweb/asset/pngegg.png" class="profile">
+                        <input type="checkbox" id="showDropProfile">
+                        <label for="showDropProfile" class="mobile-item">Profile</label>
+                        <ul class="drop-menu1">
+                            <li><a href="update-profile.html">Update Profile</a></li>
+                            <li><a href="login.html">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="update-section">
+            <h1>Update Password</h1>
+            <form action="update_password.php" method="POST">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"  placeholder="Email">
+
+                <label for="newPassword">New Password:</label>
+                <input type="password" name="new_password" placeholder="New Password">
+    
+                <button type="submit" name="update_password">Update Password</button>
+            </form>
+        </div>
+    
+        <div class="update-section">
+            <h2>Delete Account</h2>
+            <p>Deleting your account will permanently remove all your data. This action cannot be undone.</p>
+            <form action="deleteacc.php" method="POST" onsubmit="return confirm('Are you sure you want to delete your account?');">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Email">
+        
+                <label for="password">Password:</label>
+                <input type="password" name="password" placeholder="Password">
+        
+                <button type="submit" name="delete_account" class="delete-btn">Delete Account</button>
+            </form>
+        </div>   
+        
+    </body>
+</html>
